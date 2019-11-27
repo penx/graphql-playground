@@ -130,7 +130,7 @@
     "graphcool-styles": "0.2.9",
     "graphcool-tmp-ui": "^0.0.11",
     "graphcool-ui": "0.0.14",
-    "graphiql": "^0.11.2",
+    "graphiql": "^0.17.0",
     "graphql": "^0.11.7",
     "immutable": "4.0.0-rc.9",
     "isomorphic-fetch": "^2.2.1",
