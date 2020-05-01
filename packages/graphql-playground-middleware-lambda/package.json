@@ -17,7 +17,8 @@
   "playgroundVersion": "1.7.4",
   "scripts": {
     "build": "rimraf dist && tsc",
-    "prepare": "npm run build"
+    "prepare": "yarn run snyk-protect && npm run build",
+    "snyk-protect": "snyk protect"
   },
   "keywords": [
     "graphql",
@@ -39,6 +40,8 @@
     "definition": "dist/index.d.ts"
   },
   "dependencies": {
-    "graphql-playground-html": "1.6.0"
-  }
+    "graphql-playground-html": "1.6.0",
+    "snyk": "^1.316.1"
+  },
+  "snyk": true
 }
