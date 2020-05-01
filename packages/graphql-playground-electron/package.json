@@ -69,7 +69,9 @@
     "stats": "NODE_ENV=production webpack --config webpack.library.js  --profile --json > stats.json",
     "test": "npm run lint",
     "precommit": "lint-staged",
-    "prettier": "prettier --single-quote --no-semi --trailing-comma all --write '*.{js,ts,tsx}' 'src/**/*.{js,ts,tsx}'"
+    "prettier": "prettier --single-quote --no-semi --trailing-comma all --write '*.{js,ts,tsx}' 'src/**/*.{js,ts,tsx}'",
+    "snyk-protect": "snyk protect",
+    "prepare": "yarn run snyk-protect"
   },
   "lint-staged": {
     "*.{ts,tsx}": [
@@ -117,7 +119,8 @@
     "styled-jsx": "2.2.6",
     "styled-jsx-postcss": "git+https://github.com/timsuchanek/styled-jsx-postcss#build3",
     "sweetalert2": "^7.21.0",
-    "validator": "^9.2.0"
+    "validator": "^9.2.0",
+    "snyk": "^1.316.1"
   },
   "devDependencies": {
     "@types/classnames": "2.2.3",
@@ -180,5 +183,6 @@
     "**/**/**/**/graphql": "0.13.2",
     "**/**/**/**/**/graphql": "0.13.2",
     "**/**/**/**/**/**/graphql": "0.13.2"
-  }
+  },
+  "snyk": true
 }
